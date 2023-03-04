@@ -1,0 +1,41 @@
+<template>
+
+  <lightning-card title="Custom Event">
+
+  <c-a10custom-event-child-first
+   onapple={handleApple}   >
+
+  </c-a10custom-event-child-first>
+
+  <h1>new INFO ===>>>  {newInfo}</h1>
+  </lightning-card>
+  <h1>*****************************************</h1>
+
+
+  <lightning-card title="Custom Event Passing Primitive Data">
+
+    <c-a10custom-event-child-second
+     onbanana={handleBanana}   >
+  
+    </c-a10custom-event-child-second>
+  
+    <h1>new INFO ===>>>  {childInfo}</h1>
+    </lightning-card>
+
+    <h1>*****************************************</h1>
+<br>
+
+    <lightning-card title="Custom Event Passing Object">
+  
+      <c-a10custom-event-child-third
+       oncherry={handleCherry}   >
+    
+      </c-a10custom-event-child-third>
+    
+      <h1>Customer Name ===>>>  {customer.name}</h1>
+      <h1>Customer Age ===>>>  {customer.age}</h1>
+
+      </lightning-card>
+
+
+</template>

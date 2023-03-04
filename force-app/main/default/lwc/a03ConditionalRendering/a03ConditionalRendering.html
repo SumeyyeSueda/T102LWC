@@ -1,0 +1,47 @@
+<template>
+
+  <lightning-card title="Conditional Rendering">
+
+    <lightning-input type="checkbox" 
+    label="Flag True/False" 
+    checked={flag}
+    name="input1"
+    onchange={handleFlag}>
+  </lightning-input>
+    
+ 
+
+  <template if:true={flag}>
+    <h1> If you see this ,flag is TRUE</h1>
+
+  </template>
+
+  <template if:false={flag}>
+    <h1> If you see this, flag is FALSE </h1>
+
+  </template>
+
+</lightning-card>
+
+<lightning-card title="Enter Password ">
+
+
+  <lightning-input
+       type="password" 
+       label="minimum 6 characters" 
+       name="input2" 
+       pattern={pattern}
+        >
+      
+      </lightning-input>
+      <template if:true={pattern}>
+            <h1> Correct Password</h1>
+      </template>
+     <template if:false={pattern}>
+      <h1>Incorrect Password</h1>
+  
+     </template>  
+    
+    </lightning-card>
+      
+</template>

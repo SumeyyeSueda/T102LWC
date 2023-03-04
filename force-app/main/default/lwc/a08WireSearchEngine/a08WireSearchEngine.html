@@ -1,0 +1,29 @@
+<template>
+    
+
+   <lightning-card title="Search Engine with @wire Decorator">
+
+    <lightning-input
+      type="text"
+      label="Search Account"
+      placeholder="enter the account name PLACE HOLDER"
+      onchange={handleInput} > </lightning-input>
+
+      <h1> ACCOUNT NAMES </h1>
+
+    <ol>
+      <template for:each={accountsForHtml.data} for:item="acc">
+          <li key={acc.Id}> ACC Name :: {acc.Name }   </li>
+
+      </template> 
+    </ol>
+    
+   
+   </lightning-card>
+
+
+
+
+
+
+</template>

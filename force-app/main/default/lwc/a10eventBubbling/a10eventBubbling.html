@@ -1,0 +1,29 @@
+<template>
+   <lightning-card title="Event Bubbling" >
+  <div onclick={handleOuterClick} 
+      class="outerClass">
+
+      <div onclick ={handleMiddleClick}
+           class="middleClass">
+
+
+          <div onclick ={handleInnerClick} 
+              class="innerClass">
+
+
+
+          </div>
+
+
+      </div>
+    </div>
+      <h1>Inner Division Click Count {innerClick}</h1>
+      <h1>Middle Division Click Count {middleClick}</h1>
+      <h1>Outer Division Click Count {outerClick}</h1>
+
+
+
+ 
+
+</lightning-card>
+</template>

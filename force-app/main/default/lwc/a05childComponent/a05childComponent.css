@@ -1,0 +1,15 @@
+h1{
+  color:brown;
+
+}
+p{
+  color: green;
+}
+.hook{
+  font-size:x-large;
+ /* color: aqua;*/
+ color: var( --styleFromParent , rgb(236, 144, 32) );
+  background-color: black;
+  display:inline-block;
+
+}

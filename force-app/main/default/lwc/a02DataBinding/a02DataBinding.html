@@ -1,0 +1,71 @@
+<template>
+
+  <h1> My name is Sumeyye</h1>
+
+  <lightning-card  title="Data Binding ( one way )">
+    <h1> My name is { name  }</h1>
+</lightning-card>
+
+<lightning-card title="Data Binding (Two way)">
+  <lightning-input
+     type="text"
+    label="Enter your NAME"
+    onblur= {handleInput}
+    >
+  </lightning-input>
+  <br>
+      <h1> my name is {  fName  }   </h1>
+  </lightning-card>
+
+  <lightning-card title=" Data Binding (get method)">
+    <lightning-input
+    type="text"
+   label="Enter your  First NAME"
+   onblur = {handleFName}
+   >
+ </lightning-input>
+ <br>
+ <h1> my name is {  manipulateFName  }   </h1>
+</lightning-card>
+
+<lightning-card title=" Data Binding (get EXAMPLE)">
+  <lightning-input
+  type="text"
+ label="Enter your  First name"
+ onblur = {handleFirstName}
+ >
+</lightning-input>
+
+  <lightning-input
+  type="text"
+ label="Enter your  LAST name"
+ onblur = {handleLastName}
+ >
+</lightning-input>
+<br>
+<h1> my last name is {  manipulateFullName  }   </h1>
+</lightning-card>
+
+
+<lightning-card title= " Data Binding (get EXAMPLE 2 multiplication)">
+
+  <lightning-input
+  type="number"
+ label="Enter the First Number"
+ onblur = {handleFirstNumber}
+ >
+</lightning-input>
+
+  <lightning-input
+  type="number"
+ label="Enter your  Second Number"
+ onblur = {handleSecondNumber}
+ >
+</lightning-input>
+<br>
+<h1> Result is  {  manipulateMultiply }   </h1>
+</lightning-card>
+    
+
+
+</template>

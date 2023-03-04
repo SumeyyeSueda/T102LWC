@@ -1,0 +1,45 @@
+<template>
+
+  <lightning-card title ="@Track Decorator with LIST">
+
+    <lightning-input
+       type="text"
+      label="Enter your NAME"
+      onchange= {handleName}
+      >
+    </lightning-input>
+  <br>
+    <lightning-input
+    type="text"
+   label="Enter your AGE"
+   onchange= {handleAge}
+   >
+  </lightning-input>
+  <br>
+  <lightning-button 
+  variant="brand" 
+  label="Generate Member" 
+  title="Primary action" 
+  onclick={handleClick} 
+  class="slds-m-left_x-small">
+
+</lightning-button>
+
+    <template for:each={familyMemberList} for:item="member">
+
+      <ol key={member.id}>
+         <li>
+    
+        <p> MEMBER NAME :: {member.name} </p>
+    
+        <P> MEMBER AGE :: {member.age}</P>
+            <p>**********</p>
+      </li>
+      <br><br>
+    
+    </ol>
+ 
+          </template>
+    
+      </lightning-card>
+</template>

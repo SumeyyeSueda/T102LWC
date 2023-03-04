@@ -1,0 +1,51 @@
+<template>
+    
+
+
+  <lightning-card title=" INPUTS">
+
+
+    <div class="slds-grid slds-gutters">
+      <div class="slds-col">
+        <span> <lightning-input
+          type="text"
+          label="Isim"
+          placeholder="enter a Name"
+          onblur = {handleFName}
+          >
+          </lightning-input>
+          </span>
+      </div>
+      <div class="slds-col">
+        <span><lightning-input
+          type="text"
+          label="Soyisim"
+          placeholder="enter a LastName"
+          onblur = {handleLName}>
+          </lightning-input></span>
+      </div>
+      <div class="slds-col">
+        <span><lightning-input
+          type="number"
+          label= "Yas"
+          placeholder="enter a Number"
+          onblur = {handleYas}
+          >
+          </lightning-input></span>
+      </div>
+    </div>
+  </lightning-card>
+
+  <br/>
+  <br/>
+  <lightning-card>
+
+ <h1> {manipulateFName}</h1>
+
+  </lightning-card>
+
+
+
+
+
+</template>

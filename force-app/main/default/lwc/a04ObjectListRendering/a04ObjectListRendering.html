@@ -1,0 +1,37 @@
+<template>
+    
+  <lightning-card title="object Iteration with for:each">
+
+<template for:each={flowerList} for:item="flower">
+<ol key={flower.id}>
+  <li>
+
+    <p> FLOWER NAME :: {flower.name} </p>
+
+    <P> FLOWER FAMILYA :: {flower.familya}</P>
+
+    <img src={flower.imgUrl} alt="flower" width="200" height="250">
+
+  </li>
+  <br><br>
+
+</ol>
+ 
+
+
+      </template>
+
+  </lightning-card>
+
+  <lightning-card title="Object Iteration with Iterator">
+    <template iterator:it={flowerList}>
+      <ol key = {it.value.id}>
+      <li >
+      <p > FLOWER NAME IS  {it.value.name} <br> FLOWER FAMILY IS {it.value.familya} </p>
+      <img src={it.value.imgUrl} alt = {it.value.name} width="200" height="300">
+      </li>
+    </ol>
+    </template>
+        </lightning-card>
+
+</template>

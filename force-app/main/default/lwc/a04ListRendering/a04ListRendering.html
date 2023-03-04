@@ -1,0 +1,47 @@
+<template>
+  
+  <lightning-card title="List Rendering (for:each)">
+    <p>Cities :: {cities} </p>
+<template for:each={cities} for:item="city">
+<p key={city}> {city} </p>
+
+</template>
+
+  </lightning-card>
+
+  <br>
+
+  <lightning-card title="List Rendering (ITERATOR)">
+    <p>Cities :: {cities} </p>
+<template iterator:it={cities}>
+
+<p key={it.value}> {it.value} </p>
+
+</template>
+
+  </lightning-card>
+
+
+
+<br>
+
+<lightning-card title="Difference Between ITERATOR AND FOR:EACH ">
+<template iterator:it={cities}>
+ 
+ 
+  <p key={it.value} if:true={it.first}> *** Here are my fav cities it.FIRST *** </p>
+
+  <p key={it.value}> {it.value} </p>
+
+  <p key={it.value} if:true={it.last}> *** it.LAST *** </p>
+
+
+  
+
+
+</template>
+
+</lightning-card>
+
+
+</template>

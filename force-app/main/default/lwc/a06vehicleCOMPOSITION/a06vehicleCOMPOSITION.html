@@ -1,0 +1,74 @@
+<template>
+    
+  <lightning-card title="Composition">
+
+    <h1>VEHICLE</h1>
+    <br>
+
+    <h1 style="color: red ;"><b>Model of vehicle :: {vehichleModel}</b> </h1>
+
+    <div class="slds-grid">
+      <div class="slds-col">
+        <span></span>
+        <lightning-input
+        type="text"
+       label="ENGINE MODEL"
+       onblur= {handleEngineModel}
+       >
+     </lightning-input>     
+    </div>
+
+  
+      <div class="slds-col">
+        <span></span>
+        <lightning-input
+        type="text"
+       label="ENGINE VOLUME"
+       onblur= {handleEngineVolume}
+       >
+     </lightning-input>    
+    </div>
+
+
+      <div class="slds-col">
+        <span></span>
+        <lightning-input
+        type="text"
+       label="FUEL TYPE "
+       onblur= {handleFuelType}
+       >
+     </lightning-input>
+      </div>
+
+
+      <div class="slds-col">
+        <span></span>
+        <lightning-input
+        type="text"
+       label="HORSE POWER"
+       onblur= {handleHorsePower}
+       >
+     </lightning-input>
+      </div>
+    </div>
+   
+    <br>
+
+    <c-a06engine-composition
+    
+    engine-model = {engineModelParent}
+    engine-volume-parent = {engineVolumeGrandParent}
+    fuel-type-parent = {fuelTypeGrandparent}
+    horse-power-parent = {horsePowerGrandParent}
+    >
+
+
+
+    </c-a06engine-composition>
+
+
+
+
+
+  </lightning-card>
+</template>

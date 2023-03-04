@@ -1,0 +1,29 @@
+<template>
+    
+
+<lightning-card title="Getter Method">
+
+<h1> number1 ::  {num1}   number2 ::{num2} sum :: {sum}  </h1>
+<h1> GETTER METHOD number1 ::  {num1}   number2 ::{num2} sum :: {total}  </h1>
+<br>
+<h1>2.name from array is {nameToDisplay} </h1>
+<h1>2.name from array with GETTER Method {nameForDisplay} </h1>
+
+<br>
+
+<lightning-input
+  type="number"
+  label="Give a number, we will show the name"
+  placeholder="enter the number"
+  onchange={handleInput}>
+</lightning-input>
+
+
+<h1>2.name from array is {userSelectName} </h1>
+<h1>2.name from array with GETTER Method {userSelectNameByGet} </h1>
+
+</lightning-card>
+
+
+
+</template>

@@ -1,0 +1,24 @@
+<template>
+    
+
+  <lightning-card title="parent event Listens by HTML">
+
+    <c-a10event-child-html onclick={handleClick}>
+
+    </c-a10event-child-html >
+    <h1>Parent Click Counter {clicked}</h1>
+
+  </lightning-card>
+  <h1>**************************</h1>
+  <br>
+  <lightning-card title="parent event Listens by JS">
+        <h1>By clicking the button you will receive an alert</h1>
+<c-a10event-child-js class="childComponent">
+
+
+</c-a10event-child-js>
+
+
+    
+  </lightning-card>
+</template>

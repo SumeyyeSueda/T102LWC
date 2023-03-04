@@ -1,0 +1,40 @@
+<template>
+    
+  <lightning-card title="GET and SET methods with Primitive Data">
+
+
+<h1>enter your age, Program will display your Year of Birth</h1>
+<lightning-input 
+type="number"
+label="Age"
+placeholder="enter your age"
+onchange={handleAge}>
+</lightning-input>
+<br>
+
+<c-a09get-set-child year={age}>
+
+
+</c-a09get-set-child>
+
+  </lightning-card>
+  <br>
+  <h1>************************</h1>
+  <lightning-card title="get set method for OBJECT">
+
+<c-a09get-set-child-object customer-info={customer} >
+
+
+
+</c-a09get-set-child-object>
+
+
+
+    
+  </lightning-card>
+
+
+
+
+
+</template>

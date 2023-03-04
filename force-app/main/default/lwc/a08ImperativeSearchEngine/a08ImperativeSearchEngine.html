@@ -1,0 +1,29 @@
+<template>
+   
+  <lightning-card title="IMPERATIVE SEARCH">
+
+    <lightning-input
+      type="text"
+      label="Search Account"
+      placeholder="enter the account name PLACE HOLDER"
+      onchange={handleInput} > </lightning-input>
+
+      <lightning-button 
+      variant="success" 
+      label="Find Account" 
+      onclick={handleClick} 
+      class="slds-m-left_x-small"></lightning-button>
+
+      <h1> ACCOUNT NAMES with IMPERATIVE </h1>
+
+    <ol>
+      <template for:each={accountList} for:item="acc">
+          <li key={acc.Id}> ACC Name :: {acc.Name }   </li>
+
+      </template> 
+    </ol>
+    
+   
+   </lightning-card>
+
+</template>
